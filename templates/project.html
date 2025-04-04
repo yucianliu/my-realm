@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ metadata.title }}{% endblock %}
+
+{% block content %}
+    <h1>{{ metadata.title }}</h1>
+    {% if metadata.image %}
+        <img src="/static/images/{{ metadata.image }}" alt="{{ metadata.title }}">
+    {% endif %}
+    {{ content | safe }}
+    {% if metadata.link %}
+        <p><a href="{{ metadata.link }}" target="_blank">View Project</a></p>
+    {% endif %}
+    {% if metadata.github %}
+        <p><a href="{{ metadata.github }}" target="_blank">GitHub Repository</a></p>
+    {% endif %}
+{% endblock %}
