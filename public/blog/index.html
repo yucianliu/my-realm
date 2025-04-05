@@ -3,35 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Your Name</title>
+    <title>Blog | YuCian Liu's Realm</title>
     <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;1,400&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="urbanist-regular">
     <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/projects/">Projects</a></li>
         <li><a href="/blog/">Blog</a></li>
-        <li><a href="/artworks/">Artworks</a></li>
-        <li><a href="/uiux/">UI/UX Designs</a></li>
     </ul>
 </nav>
     </header>
     <main>
         
-    <h1>Blog</h1>
+    <h1 class="neuton-light">Blog</h1>
     <ul>
         
-            <li><a href="/blog/post1.html">['My First Blog Post']</a> - ['2024-04-01']</li>
+            <div class="blog-post">
+                <a href="/blog/post1.html" class="post-title-link">
+                    <h2>['My First Blog Post']</h2>
+                </a>
+                <span class="post-date">['2024-04-01']</span>
+                
+                <!-- You could add a "Read More" link here if you have excerpts -->
+            </div>
         
     </ul>
 
     </main>
     <footer>
-        <p>&copy; 2025 YuCian Liu</p>
+        <p style="font-size:0.8rem">&copy; 2025 YuCian Liu</p>
     </footer>
     <script src="/static/js/script.js"></script>
 </body>

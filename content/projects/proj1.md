@@ -1,14 +1,34 @@
 ---
-title: My Awesome Project
-date: 2024-03-15
+title: Unspoken, Reimagining Social Media
+date: 2025-03-24
 image: project1_screenshot.png
-link: https://example.com/project1
-github: https://github.com/yourusername/project1
+link: https://yucianliu.github.io/unspoken-demo
+github: https://github.com/yucianliu/unspoken-demo
 ---
 
-This project involved building a web application for [describe the purpose of the project]. I used [list the technologies used].
+One value that has characterized so many things I’ve done in college so far is helping others, helping people in accessing what they need. I enjoy visualizing how technology can connect people in non-verbal ways. This inspired me to create Unspoken, a concept social media that is completely anonymous and allows users to dump out or reflect on the feelings they have week from week.
 
-Key features include:
-- Feature 1
-- Feature 2
-- Feature 3
+It started off as a project where I merely wanted to track how much trash I produce in a week, and to take pictures of moments where people are throwing things away. But then as I encountered more scenes throughout the city, whether it was a man yelling about far-right politics or a group of students singing to their guitar melodies, I realized that the act of throwing can be very abstract. It does not have to be physical, nor does it have to be negative. So I had the impression that it would be very meaningful to create a space where people can feel comfortable dumping out their feelings, memories and anything they can think of. 
+
+Many aspects of our world surround the very basics of expressions and communication, yet these are very difficult to be good at. Of all the thoughts we tend to internalize from day to day, I often find myself being nervous about describing my deepest feelings to others. Taking inspiration from what we have practiced in class so far, I wanted to utilize images to help strengthen the resonance of the stories we tell.
+
+The ambiguity of this idea I was exploring actually increased as I began working on it. At one point I was very certain about making a continuous storyboard where each person tries to write stories that make sense of the absurd, out-of-context images the person before uploaded. But I struggled, then, with relating this plan back to my intention to (help people). I knew I wanted to explore more on the nuance of expressions. Many existing social media mechanisms—blogs, discussions, stories, short videos, and many more—offer a sense of reward and closure to its users strictly in terms of the feedback from others. Often one would expect others to recognize or sympathize with their contents. But what if I could strip away all these complications and focus on celebrating the act of sharing? 
+
+This is, in fact, something that many of us are unconsciously doing. I spoke to my friends who have been running their personal “photo dump” Instagram accounts, where they would upload candid photos of their daily life as they explore college. Each of them resonated with the idea that it feels empowering to share their lives as is, without any added filters or fuss. It very much reminds me of the core values of BeReal when it first came out, and I was likewise inspired by that. The point about these accounts is not to see other people’s reactions, but rather to keep an intimate memory lane that allows the mind to internalize certain feelings throughout a day. After looking at physical storyboards, headsets, broadcasts, and (in the near future) holograms, I eventually decided on making an interactive app because it seems to still be the quickest, easiest way to invite users to contribute in image formats.
+
+With this tool in mind, I wanted to also work on creating a sense of community that is positive, encouraging, and diverse. At this point I was still in my creative exploration phase, and the comments I’ve received from my friends and peers have been positive about the idea to “throw” images. But so far everything still revolves around the personal sphere. To take it one step further in allowing people to not just express but also relate to emotions requires reframing the concept. Part of this is to bridge various stories together in non-destructive ways. The “comment section” idea implemented across so many forms of media has gotten us into the habit of saying “I like this story, but here’s my take.”, and much of the original storytelling is diluted by adjacent opinions. I want authors and responders to feel that they are being treated equally in my app, which ended up becoming the greatest challenge in my design process because there are simply so many different forms of stories to take into consideration. I settled on what I believe was the most logical implementation at the moment, which involves making two tracks: one that allows the user to assume the persona of an author, and the other that takes the user on a journey of observation and reflection. In the author track, one would be uploading to the server an image that they would like to get rid of, and write a short story about it. In the responder track, one would take several images others have uploaded and make them into a personal collage. 
+
+Here’s a more detailed list that outlines how the app works:
+- This is a completely no-text, no-verbal feedback site. Sense of closure is provided through the action of making collages. I wanted to deviate from the existing notion of social media by not offering any direct means of communication between people, and keeping users away from biased judgements. The focus is about evoking and expressing feelings.
+- Every other day (or at a frequency one feels comfortable with) the user uploads a photo they “want to throw” to the app, and writes a short story about it.
+- By the end of the week, one will be able to pick from a wide array of photos others uploaded and turn them into a collage that reflects their feelings from the past week. 
+- After sending their collages in, they can then look at what the original authors of each picture said about the pictures, and compare/relate to them.
+- Users who upload images will be able to see how many people included those pictures in their own collages. 
+- At the end of each year, we ask our users to rewind by stepping through all the 52 collages they’ve made. Each collage will conjure a special memory and allow the user to reflect on their personal growths.
+
+I very much recognize that there are many aspects of this app that could be better thought out, which is why I am excited to keep this project with me long-term. I expect to find other ways of executing the ideas outlined in the project as I progress through my academic journey. But nonetheless I believe the creative work I’ve done so far has inspired me to look at how people most comfortably share their opinions, which is invaluable to my work as a product engineer and designer.
+
+<!-- an example of how to define the style of a specific text
+- <span class="urbanist-medium">Feature 1</span>: Description of feature 1.
+- Feature 2: Description of feature 2.
+- Feature 3: Description of feature 3. -->

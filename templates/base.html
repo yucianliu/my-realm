@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% endblock %} | Your Name</title>
+    <title>{% block title %}{% endblock %} | YuCian Liu's Realm</title>
     <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;1,400&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     {% block head %}{% endblock %}
 </head>
 <body>
@@ -15,7 +18,7 @@
         {% block content %}{% endblock %}
     </main>
     <footer>
-        <p>&copy; 2025 YuCian Liu</p>
+        <p style="font-size:0.8rem">&copy; 2025 YuCian Liu</p>
     </footer>
     <script src="/static/js/script.js"></script>
 </body>

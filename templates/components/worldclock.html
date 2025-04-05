@@ -3,37 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | YuCian Liu's Realm</title>
-    <link rel="stylesheet" href="/static/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;1,400&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-</head>
-<body>
-    <header>
-        <nav class="urbanist-regular">
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/projects/">Projects</a></li>
-        <li><a href="/blog/">Blog</a></li>
-    </ul>
-</nav>
-    </header>
-    <main>
-        
-    <h1 class="urbanist-regular">About me</h1>
-    <div class="urbanist-regular">
-        <p>My name is YuCian (you sometimes see me with a lowercase "c") and I am a third year student at UC Berkeley studying Computer Science.</p>
-<p>I am a passionate creator with a diverse set of skills in design and software development. I love bringing ideas to life through various mediums, and I am intrigued by the ways in which our world communicates non-verbally with maps and images.</p>
-<p>[Optional: Add more details about your background, skills, and interests.]</p>
-    </div>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Clock</title>
     <style>
         .clock-analog {
@@ -117,47 +86,22 @@
 </head>
 <body>
     <div class="grid">
-        
-        <div class="clock-analog" id="berkeley-clock-analog">
-            <div class="city">Berkeley, USA</div>
+        {% for city_data in [
+            {'id': 'berkeley', 'name': 'Berkeley, USA'},
+            {'id': 'taipei', 'name': 'Taipei, Taiwan'},
+            {'id': 'tokyo', 'name': 'Tokyo, Japan'},
+            {'id': 'amsterdam', 'name': 'Amsterdam, Netherlands'}
+        ] %}
+        <div class="clock-analog" id="{{ city_data.id }}-clock-analog">
+            <div class="city">{{ city_data.name }}</div>
             <div class="clock-face">
-                <div class="hand hour" id="berkeley-hour"></div>
-                <div class="hand minute" id="berkeley-minute"></div>
-                <div class="hand second" id="berkeley-second"></div>
+                <div class="hand hour" id="{{ city_data.id }}-hour"></div>
+                <div class="hand minute" id="{{ city_data.id }}-minute"></div>
+                <div class="hand second" id="{{ city_data.id }}-second"></div>
                 <div class="center"></div>
             </div>
         </div>
-        
-        <div class="clock-analog" id="taipei-clock-analog">
-            <div class="city">Taipei, Taiwan</div>
-            <div class="clock-face">
-                <div class="hand hour" id="taipei-hour"></div>
-                <div class="hand minute" id="taipei-minute"></div>
-                <div class="hand second" id="taipei-second"></div>
-                <div class="center"></div>
-            </div>
-        </div>
-        
-        <div class="clock-analog" id="tokyo-clock-analog">
-            <div class="city">Tokyo, Japan</div>
-            <div class="clock-face">
-                <div class="hand hour" id="tokyo-hour"></div>
-                <div class="hand minute" id="tokyo-minute"></div>
-                <div class="hand second" id="tokyo-second"></div>
-                <div class="center"></div>
-            </div>
-        </div>
-        
-        <div class="clock-analog" id="amsterdam-clock-analog">
-            <div class="city">Amsterdam, Netherlands</div>
-            <div class="clock-face">
-                <div class="hand hour" id="amsterdam-hour"></div>
-                <div class="hand minute" id="amsterdam-minute"></div>
-                <div class="hand second" id="amsterdam-second"></div>
-                <div class="center"></div>
-            </div>
-        </div>
-        
+        {% endfor %}
     </div>
 
     <script>
@@ -210,15 +154,5 @@
         // Initial call to set the time immediately
         updateAnalogClock();
     </script>
-</body>
-</html>
-    
-
-
-    </main>
-    <footer>
-        <p style="font-size:0.8rem">&copy; 2025 YuCian Liu</p>
-    </footer>
-    <script src="/static/js/script.js"></script>
 </body>
 </html>

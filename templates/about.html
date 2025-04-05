@@ -3,5 +3,11 @@
 {% block title %}About{% endblock %}
 
 {% block content %}
-    {{ content | safe }}
+    <h1 class="urbanist-regular">About me</h1>
+    <div class="urbanist-regular">
+        {{ content | safe }}
+    </div>
+    {% include 'components/worldclock.html' %}
+    
+
 {% endblock %}

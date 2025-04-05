@@ -3,7 +3,7 @@
 {% block title %}Projects{% endblock %}
 
 {% block content %}
-    <h1>Projects</h1>
+    <h1 class="urbanist-regular">Projects</h1>
     <ul>
         {% for project in items %}
             <li><a href="/projects/{{ project.slug }}.html">{{ project.title }}</a></li>

@@ -75,8 +75,6 @@ if __name__ == '__main__':
     os.makedirs(os.path.join(OUTPUT_DIR, 'static', 'css'), exist_ok=True)
     os.makedirs(os.path.join(OUTPUT_DIR, 'static', 'js'), exist_ok=True)
     os.makedirs(os.path.join(OUTPUT_DIR, 'static', 'images'), exist_ok=True)
-    # os.makedirs(os.path.join(OUTPUT_DIR, 'artworks'), exist_ok=True)
-    # os.makedirs(os.path.join(OUTPUT_DIR, 'uiux'), exist_ok=True)
     os.makedirs(os.path.join(OUTPUT_DIR, 'projects'), exist_ok=True)
     os.makedirs(os.path.join(OUTPUT_DIR, 'blog'), exist_ok=True)
 
@@ -99,13 +97,5 @@ if __name__ == '__main__':
     # Generate blog list and individual blog posts
     generate_list_page('blog', 'blog.html', 'blog/index.html', 'Blog')
     generate_single_page('blog', 'post.html')
-
-    # # Generate artwork list and individual artwork pages
-    # generate_list_page('artworks', 'artworks.html', 'artworks/index.html', 'Artworks')
-    # generate_single_page('artworks', 'artwork.html')
-
-    # # Generate UI/UX design list and individual UI/UX design pages
-    # generate_list_page('uiux', 'uiux_designs.html', 'uiux/index.html', 'UI/UX Designs')
-    # generate_single_page('uiux', 'uiux_design.html')
 
     print("Portfolio website generated in the 'public' directory.")
